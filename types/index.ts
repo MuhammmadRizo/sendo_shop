@@ -1,3 +1,5 @@
+import { StaticImport } from 'next/image';
+
 export interface Product {
   id: string;
   slug: string;
@@ -6,7 +8,7 @@ export interface Product {
   price: number;
   oldPrice?: number;
   discountPercent?: number;
-  mainImage: string;
+  mainImage: StaticImport;
   rating: number;
   reviewsCount: number;
   stockStatus: 'in_stock' | 'low_stock' | 'out_of_stock';
@@ -39,7 +41,7 @@ export interface BlogPost {
   slug: string;
   title: string;
   excerpt: string;
-  thumbnail: string;
+  thumbnail: string | StaticImport;
   date: string;
   category: string;
 }
@@ -49,7 +51,7 @@ export interface Category {
   id: string;
   name: string;
   slug: string;
-  image: string;
+  image: StaticImport;
   productCount: number;
 }
 
@@ -61,7 +63,7 @@ export interface CartItem {
 export interface VideoItem {
   id: string;
   title: string;
-  thumbnail: string;
+  thumbnail: StaticImport;
   youtubeId: string;
   duration: string;
 }
