@@ -24,7 +24,6 @@ const PromoMarketplace = () => {
       desc: "на всю продукцию SENDO",
       btn: "Перейти",
       btn1: "Скопировать",
-      imageStyle: { width: "235px", height: "120px", objectFit: "contain" },
     },
     {
       name: "OZON",
@@ -34,7 +33,6 @@ const PromoMarketplace = () => {
       desc: "на всю продукцию SENDO",
       btn: "Перейти",
       btn1: "Скопировать",
-      imageStyle: { width: "120px", height: "120px", objectFit: "contain" },
     },
   ];
 
@@ -49,7 +47,7 @@ const PromoMarketplace = () => {
               key={name}
               className="group pb-6 bg-white rounded-2xl border border-[#EEF1F8] flex flex-col items-center gap-3 hover:shadow-[0_6px_24px_rgba(10,75,222,0.12)] hover:border-transparent transition-all"
             >
-              <Image src={image} alt={name} style={imageStyle} />
+              <Image src={image} alt={name} />
 
               <h1 className="font-bold text-lg text-[#2D2D2D] -mt-6 text-6xl">
                 {promo}
