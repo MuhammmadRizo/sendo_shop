@@ -42,7 +42,7 @@ const PromoMarketplace = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 py-7">
         {marketplaces.map(
-          ({ image, name, promo, desc, btn, btn1, imageStyle, spantext }) => (
+          ({ image, name, promo, desc, btn, btn1, spantext }) => (
             <div
               key={name}
               className="group pb-6 bg-white rounded-2xl border border-[#EEF1F8] flex flex-col items-center gap-3 hover:shadow-[0_6px_24px_rgba(10,75,222,0.12)] hover:border-transparent transition-all"
